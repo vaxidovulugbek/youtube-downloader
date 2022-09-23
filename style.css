@@ -1,0 +1,159 @@
+.containers {
+  width: 96%;
+  margin: 0 auto;
+}
+
+body {
+  background: #181818 !important;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.header h1 {
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 20px;
+  width: 180px;
+  text-align: center;
+}
+
+.header__formcontrol {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.header input {
+  width: 72%;
+  padding: 8px 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.header input:focus {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+.header button {
+  width: 25%;
+  margin-left: 3%;
+  color: #fff;
+  background-color: #3c4d58;
+  padding: 8px 14px;
+}
+.header button:hover {
+  background-color: #3c4d58 !important;
+  color: #fff !important;
+}
+
+.header p {
+  display: inline;
+  background-color: #f8d7da;
+  padding: 16px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.div__video {
+  width: 100%;
+  height: 75vh;
+  color: #fff;
+}
+
+.videoPlayer {
+  width: 100%;
+  height: 90%;
+  margin-bottom: 20px;
+}
+
+.audio__controls {
+  width: 100%;
+  height: 10%;
+}
+
+@media screen and (max-width:900px) {
+  .header h1 {
+    font-size: 18px;
+    margin: 14px;
+  }
+}
+
+@media screen and (max-width:720px) {
+  .header h1 {
+    font-size: 16px;
+    margin: 5px;
+  }
+  .header img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .header__content {
+    flex-direction: column;
+  }
+  .header h1 {
+    font-size: 18px;
+    margin: 20px;
+  }
+  .header img {
+    width: 80px;
+    height: 80px;
+  }
+  .header__formcontrol  {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width:420px) {
+  .header p {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .header__formcontrol {
+    flex-direction: column;
+  }
+  .header input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .header button {
+    width: 100%;
+    margin: 0;
+  }
+}
